@@ -17,10 +17,6 @@ ADVENTURE - "Where Every Journey Begins"
  ## 🔗 To see the project
 [Tourism website]()
 
-
-## 👓 Preview
-
-
 ## ⛰ Adventure - Features 
 Adventure is your passport to explore the world's most exciting destinations and discover amazing events, tours, and hidden gems. Our platform is designed to inspire and assist you in planning your next unforgettable journey.
 - Home: Welcome to Adventure. Get inspired with captivating images and stories from around the globe.
