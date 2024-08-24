@@ -15,7 +15,7 @@ ADVENTURE - "Where Every Journey Begins"
  -  Pure HTML, CSS, JavaScript used
  
  ## 🔗 To see the project
-[Tourism website](journey-venture.vercel.app)
+[Tourism website]([journey-venture.vercel.app](https://journey-venture.vercel.app/))
 
 ## ⛰ Adventure - Features 
 Adventure is your passport to explore the world's most exciting destinations and discover amazing events, tours, and hidden gems. Our platform is designed to inspire and assist you in planning your next unforgettable journey.
