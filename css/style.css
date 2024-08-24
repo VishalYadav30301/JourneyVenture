@@ -414,7 +414,7 @@ section {
 }
 
 /* Contributors */
-.contributors {
+/* .contributors {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -425,7 +425,7 @@ section {
   min-height: 100vh;
   background-color: #000;
   font-family: "Montserrat", sans-serif;
-}
+} */
 
 .concard {
   background-color: #ffff;
@@ -848,7 +848,8 @@ body.dark{
 }
 
 
-#quote {
+#quote{
+
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -859,9 +860,11 @@ body.dark{
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 8s linear infinite;
-  -webkit-background-clip: text;
+  -webkit-background-clip : text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
 }
+
 
 @keyframes animate {
   0% {
@@ -913,6 +916,97 @@ input[type=radio] {
   object-fit: cover;
 }
 
+
+/* Adjust the transformations and opacity for 5 items */
+#item-1:checked ~ .cards #col-img-1,
+#item-2:checked ~ .cards #col-img-2,
+#item-3:checked ~ .cards #col-img-3,
+#item-4:checked ~ .cards #col-img-4,
+#item-5:checked ~ .cards #col-img-5 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+#item-1:checked ~ .cards #col-img-2, #item-2:checked ~ .cards #col-img-3, #item-3:checked ~ .cards #col-img-4, #item-4:checked ~ .cards #col-img-5, #item-5:checked ~ .cards #col-img-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #col-img-5, #item-2:checked ~ .cards #col-img-1, #item-3:checked ~ .cards #col-img-2, #item-4:checked ~ .cards #col-img-3, #item-5:checked ~ .cards #col-img-4 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #col-img-3, #item-2:checked ~ .cards #col-img-4, #item-3:checked ~ .cards #col-img-5, #item-4:checked ~ .cards #col-img-1, #item-5:checked ~ .cards #col-img-2 {
+  transform: translatex(-80%) scale(.7);
+  opacity: .3;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #col-img-4, #item-2:checked ~ .cards #col-img-5, #item-3:checked ~ .cards #col-img-1, #item-4:checked ~ .cards #col-img-2, #item-5:checked ~ .cards #col-img-3 {
+  transform: translatex(80%) scale(.7);
+  opacity: .3;
+  z-index: 0;
+}
+
+/* Optional: Adjust the player transformations for 5 items */
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-40px);
+}
+
+#item-4:checked ~ .player #test {
+  transform: translateY(-80px);
+}
+
+#item-5:checked ~ .player #test {
+  transform: translateY(-120px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 #item-1:checked ~ .cards #col-img-3, #item-2:checked ~ .cards #col-img-1, #item-3:checked ~ .cards #col-img-2 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
@@ -945,6 +1039,6 @@ input[type=radio] {
 
 #item-3:checked ~ .player #test  {
   transform: translateY(-80px);
-}
+} */
 
 /* end */
